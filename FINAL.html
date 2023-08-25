@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+        }
+
+        /* Styles for the camera lens */
+        #camera-lens {
+            position: absolute;
+            top: 55px;
+            left: 63%;
+            transform: translateX(-50%);
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: #fff;
+            z-index: 2; 
+        }
+
+        /* Styles for the camera */
+        #camera {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 145px;
+            height: 34px;
+            border-radius: 30px;
+            background: #000;
+        }
+    </style>
+
+    <title>AD IN PHONE</title>
+</head>
+
+<body>
+    <div id="camera-lens"></div>
+    <div id="camera"></div>
+    <div class="image-container">
+        <img class="centered-image" src="Rectangle 1.png" alt="Centered Image">
+    </div>
+</body>
+
+</html>
